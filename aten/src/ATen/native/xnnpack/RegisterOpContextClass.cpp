@@ -58,12 +58,12 @@ TORCH_LIBRARY(xnnpack, m) {
         [](SerializationTypeTransposeConv2dPrePack state)
             -> c10::intrusive_ptr<TransposeConv2dOpContext> { // __setstate__
           return createConv2dTransposeClampPrePackOpContext(
-              std::move(std::get<0>(state)),
-              std::move(std::get<1>(state)),
-              std::move(std::get<2>(state)),
-              std::move(std::get<3>(state)),
-              std::move(std::get<4>(state)),
-              std::move(std::get<5>(state)),
+              std::get<0>(state),
+              std::get<1>(state),
+              std::get<2>(state),
+              std::get<3>(state),
+              std::get<4>(state),
+              std::get<5>(state),
               std::get<6>(state),
               std::get<7>(state),
               std::get<8>(state));
